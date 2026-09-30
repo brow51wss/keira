@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Host Keira — Brand Guide</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@400;500;600&family=Great+Vibes&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F5EBD7;color:#141210;font-family:Montserrat,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#8A6D1F;text-decoration:none}
+a:hover{color:#D4AF37}
+button{font:inherit}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#F5EBD7">
+
+<header data-screen-label="Cover" style="background:#0B0A09;color:#F5EBD7;padding:clamp(64px,10vw,120px) 28px clamp(56px,8vw,96px)">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+    <div style="display:flex;align-items:baseline;gap:10px;color:#D4AF37;line-height:1">
+      <span style="font-family:'Playfair Display',serif;font-size:16px;letter-spacing:.32em">HOST</span>
+      <span style="font-family:'Great Vibes',cursive;font-size:56px">Keira</span>
+    </div>
+    <h1 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(44px,6vw,76px);line-height:1.05">Brand Guide &amp; Stylesheet</h1>
+    <p style="margin:0;max-width:620px;font-size:16px;line-height:1.7;color:#D9D0BE;text-wrap:pretty">The rules behind the Host Keira website. Use these fonts, sizes, colors and components for every new section and page. Values match <a href="host-keira.css" style="color:#D4AF37">host-keira.css</a>.</p>
+    <nav style="display:flex;gap:10px 26px;flex-wrap:wrap;padding-top:20px;border-top:1px solid rgba(212,175,55,.25)">
+      <a href="#colors" style="color:#D4AF37;font-size:12px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">01 Colors</a>
+      <a href="#fonts" style="color:#D4AF37;font-size:12px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">02 Fonts</a>
+      <a href="#scale" style="color:#D4AF37;font-size:12px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">03 Type Scale</a>
+      <a href="#components" style="color:#D4AF37;font-size:12px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">04 Components</a>
+      <a href="#layout" style="color:#D4AF37;font-size:12px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">05 Layout</a>
+      <a href="#css" style="color:#D4AF37;font-size:12px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap">06 Stylesheet</a>
+    </nav>
+  </div>
+</header>
+
+<section id="colors" data-screen-label="01 Colors" style="padding:clamp(64px,9vw,112px) 28px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8A6D1F">01 — Colors</p>
+      <h2 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:1.12">Onyx, gold and beige</h2>
+      <p style="margin:0;max-width:640px;font-size:16px;line-height:1.7;color:#3A3530;text-wrap:pretty">Keep the balance near 60% beige/ivory, 30% onyx, 10% gold. Alternate light and dark sections down the page; never place two dark sections back to back without a light one between.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+      <div style="display:flex;flex-direction:column;border:1px solid rgba(20,18,16,.12);background:#FBF6EC">
+        <div style="height:200px;background:#0B0A09;padding:22px;display:flex;align-items:flex-end;color:#F5EBD7;font-family:'Playfair Display',serif;font-size:28px">Onyx</div>
+        <div style="padding:22px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Primary</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:13px">#0B0A09 · --hk-onyx</span>
+          <span style="font-size:14px;line-height:1.65;color:#4A443D">Header, hero, footer, dark sections, dark buttons. Hover: #221F1B.</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;border:1px solid rgba(20,18,16,.12);background:#FBF6EC">
+        <div style="height:200px;background:#D4AF37;padding:22px;display:flex;align-items:flex-end;color:#0B0A09;font-family:'Playfair Display',serif;font-size:28px">Gold</div>
+        <div style="padding:22px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Secondary</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:13px">#D4AF37 · --hk-gold</span>
+          <span style="font-size:14px;line-height:1.65;color:#4A443D">Primary buttons, script accents, lines and text on onyx. Hover: #E6C458.</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;border:1px solid rgba(20,18,16,.12);background:#FBF6EC">
+        <div style="height:200px;background:#F5EBD7;padding:22px;display:flex;align-items:flex-end;color:#0B0A09;font-family:'Playfair Display',serif;font-size:28px;border-bottom:1px solid rgba(20,18,16,.12)">Beige</div>
+        <div style="padding:22px;display:flex;flex-direction:column;gap:10px">
+          <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Tertiary</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:13px">#F5EBD7 · --hk-beige</span>
+          <span style="font-size:14px;line-height:1.65;color:#4A443D">Page background and light sections. Pair with Ivory #FBF6EC for cards and alternate sections.</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <h3 style="margin:0;font-family:'Playfair Display',serif;font-weight:500;font-size:24px">Supporting colors</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px">
+        <sc-for list="{{ neutrals }}" as="c" hint-placeholder-count="8">
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="height:64px;background:{{ c.hex }};border:1px solid rgba(20,18,16,.12)"></div>
+            <span style="font-size:13px;font-weight:600">{{ c.name }}</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#4A443D">{{ c.hex }}</span>
+            <span style="font-size:12px;line-height:1.5;color:#4A443D">{{ c.use }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <h3 style="margin:0;font-family:'Playfair Display',serif;font-weight:500;font-size:24px">Approved text pairings</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px">
+        <div style="background:#F5EBD7;border:1px solid rgba(20,18,16,.12);padding:20px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Playfair Display',serif;font-size:22px;color:#141210">Ink on Beige</span><span style="font-size:12px;color:#3A3530">Headings, body · passes AA</span></div>
+        <div style="background:#F5EBD7;border:1px solid rgba(20,18,16,.12);padding:20px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Playfair Display',serif;font-size:22px;color:#8A6D1F">Deep Gold on Beige</span><span style="font-size:12px;color:#3A3530">Eyebrows, links · passes AA</span></div>
+        <div style="background:#0B0A09;padding:20px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Playfair Display',serif;font-size:22px;color:#D4AF37">Gold on Onyx</span><span style="font-size:12px;color:#D9D0BE">Accents, links, eyebrows · passes AA</span></div>
+        <div style="background:#D4AF37;padding:20px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'Playfair Display',serif;font-size:22px;color:#0B0A09">Onyx on Gold</span><span style="font-size:12px;color:#0B0A09">Primary buttons · passes AA</span></div>
+      </div>
+      <p style="margin:0;font-size:14px;line-height:1.7;color:#4A443D">Avoid: bright Gold #D4AF37 text on beige or white (fails contrast — use Deep Gold #8A6D1F), and gray text on onyx below #B8AF9E.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fonts" data-screen-label="02 Fonts" style="background:#FBF6EC;padding:clamp(64px,9vw,112px) 28px;border-top:1px solid rgba(20,18,16,.08)">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8A6D1F">02 — Font families</p>
+      <h2 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:1.12">Three fonts, three jobs</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:1px;background:rgba(20,18,16,.12);border:1px solid rgba(20,18,16,.12)">
+      <div style="background:#FBF6EC;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Playfair Display',serif;font-size:88px;line-height:1">Aa</span>
+        <span style="font-family:'Playfair Display',serif;font-size:24px">Playfair Display</span>
+        <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Headings · H1–H5, quotes</span>
+        <span style="font-size:14px;line-height:1.65;color:#4A443D">Regular 400 for H1–H2, Medium 500 for H3–H5, Italic 400 for pull quotes. Fallback: Georgia, serif.</span>
+      </div>
+      <div style="background:#FBF6EC;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:Montserrat,sans-serif;font-size:88px;line-height:1">Aa</span>
+        <span style="font-family:Montserrat,sans-serif;font-size:22px;font-weight:500">Montserrat</span>
+        <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Body · H6, labels, buttons, forms</span>
+        <span style="font-size:14px;line-height:1.65;color:#4A443D">Regular 400 for body, Medium 500 for eyebrows and labels, SemiBold 600 for buttons. Fallback: Helvetica Neue, Arial.</span>
+      </div>
+      <div style="background:#FBF6EC;padding:32px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Great Vibes',cursive;font-size:96px;line-height:.9;color:#8A6D1F">Aa</span>
+        <span style="font-family:'Great Vibes',cursive;font-size:34px;line-height:1">Great Vibes</span>
+        <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Accent · script</span>
+        <span style="font-size:14px;line-height:1.65;color:#4A443D">Short phrases only ("My Stage.", "Keira"). One per section, never for body copy, never smaller than 28px.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="scale" data-screen-label="03 Type Scale" style="padding:clamp(64px,9vw,112px) 28px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8A6D1F">03 — Type scale</p>
+        <h2 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:1.12">Sizes by device</h2>
+        <p style="margin:0;font-size:14px;color:#4A443D">Desktop ≥1024px · Tablet 768–1023px · Mobile ≤767px</p>
+      </div>
+      <div style="display:flex;border:1px solid #0B0A09">
+        <sc-for list="{{ devices }}" as="d" hint-placeholder-count="3">
+          <button onClick="{{ d.pick }}" style="background:{{ d.bg }};color:{{ d.fg }};border:none;padding:12px 18px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;cursor:pointer">{{ d.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid #0B0A09">
+      <sc-for list="{{ scale }}" as="t" hint-placeholder-count="14">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px 32px;align-items:center;padding:22px 0;border-bottom:1px solid rgba(20,18,16,.12)">
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-size:13px;font-weight:600">{{ t.name }}</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#4A443D">D {{ t.d }} · T {{ t.t }} · M {{ t.m }}</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#4A443D">{{ t.spec }}</span>
+          </div>
+          <div style="grid-column:span 2;min-width:0;overflow-wrap:anywhere;padding-bottom:.12em;font-family:{{ t.family }};font-size:{{ t.size }}px;font-weight:{{ t.weight }};line-height:{{ t.lh }};letter-spacing:{{ t.ls }};text-transform:{{ t.tt }};font-style:{{ t.fs }};color:{{ t.color }};text-wrap:pretty">{{ t.sample }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="components" data-screen-label="04 Components" style="background:#FBF6EC;padding:clamp(64px,9vw,112px) 28px;border-top:1px solid rgba(20,18,16,.08)">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8A6D1F">04 — Components</p>
+      <h2 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:1.12">Building blocks</h2>
+      <p style="margin:0;max-width:640px;font-size:16px;line-height:1.7;color:#3A3530">Square corners everywhere (radius 0). The only rounded element is the floating Messenger pill.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px">
+      <div style="background:#F5EBD7;padding:32px;display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#6B6B6B;font-weight:500">Buttons on light · .hk-btn</span>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#components" style="background:#D4AF37;color:#0B0A09;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:16px 26px;white-space:nowrap" style-hover="background:#E6C458;color:#0B0A09">Primary →</a>
+          <a href="#components" style="background:#0B0A09;color:#D4AF37;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:16px 26px;white-space:nowrap" style-hover="background:#221F1B;color:#E6C458">Dark →</a>
+        </div>
+        <span style="font-size:13px;line-height:1.6;color:#4A443D">Montserrat 600, 13px, 0.14em tracking, uppercase, 16×26px padding. Arrow "→" on action buttons.</span>
+      </div>
+      <div style="background:#0B0A09;padding:32px;display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#B8AF9E;font-weight:500">Buttons on dark</span>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="#components" style="background:#D4AF37;color:#0B0A09;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:16px 26px;white-space:nowrap" style-hover="background:#E6C458;color:#0B0A09">Primary →</a>
+          <a href="#components" style="border:1px solid #D4AF37;color:#D4AF37;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:15px 26px;white-space:nowrap" style-hover="background:rgba(212,175,55,.12);color:#E6C458">Outline</a>
+        </div>
+        <span style="font-size:13px;line-height:1.6;color:#D9D0BE">One Primary per view. Outline is for secondary actions only.</span>
+      </div>
+      <div style="background:#F5EBD7;padding:32px;display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#6B6B6B;font-weight:500">Section header pattern</span>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8A6D1F">Eyebrow (H6)</p>
+          <h3 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:34px;line-height:1.12">Section title (H2)</h3>
+          <div style="width:120px;display:flex;align-items:center"><span style="flex:1;height:1px;background:#D4AF37"></span><span style="width:6px;height:6px;border-radius:50%;background:#D4AF37"></span><span style="flex:1;height:1px;background:#D4AF37"></span></div>
+        </div>
+        <span style="font-size:13px;line-height:1.6;color:#4A443D">Eyebrow → title → optional line element (.hk-divider). 14–16px gap between.</span>
+      </div>
+      <div style="background:#F5EBD7;padding:32px;display:flex;flex-direction:column;gap:18px">
+        <span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#6B6B6B;font-weight:500">Form field · .hk-input</span>
+        <div style="padding:15px 16px;border:1px solid rgba(20,18,16,.18);background:#fff;font-size:14px;color:#8A8378">Full name *</div>
+        <div style="padding:15px 16px;border:1px solid #D4AF37;background:#fff;font-size:14px;color:#141210">Focused field</div>
+        <span style="font-size:13px;line-height:1.6;color:#4A443D">White fill, 1px border, gold border on focus. Required fields end in " *".</span>
+      </div>
+      <div style="background:#FBF6EC;border:1px solid rgba(20,18,16,.12);padding:36px 32px 40px;display:flex;flex-direction:column;gap:14px">
+        <span style="font-family:'Playfair Display',serif;font-size:14px;color:#8A6D1F;letter-spacing:.1em">01</span>
+        <h4 style="margin:0;font-family:'Playfair Display',serif;font-weight:500;font-size:24px">Light card · .hk-card</h4>
+        <p style="margin:0;font-size:14.5px;line-height:1.7;color:#4A443D">Ivory fill, hairline border, numbered index instead of icons. Hover: beige fill.</p>
+      </div>
+      <div style="background:#0B0A09;padding:32px;display:flex">
+        <div style="border:1px solid rgba(212,175,55,.35);padding:32px 28px;display:flex;flex-direction:column;gap:16px;width:100%">
+          <span style="font-family:'Playfair Display',serif;font-size:48px;line-height:.6;color:#D4AF37;height:22px">“</span>
+          <p style="margin:0;font-family:'Playfair Display',serif;font-size:19px;line-height:1.5;color:#F5EBD7">Dark card · .hk-card-dark for testimonials.</p>
+          <span style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#D4AF37">— Client name</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="layout" data-screen-label="05 Layout" style="padding:clamp(64px,9vw,112px) 28px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8A6D1F">05 — Layout &amp; spacing</p>
+      <h2 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:1.12">Grid and rhythm</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid #0B0A09">
+      <sc-for list="{{ layout }}" as="l" hint-placeholder-count="7">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px 32px;padding:18px 0;border-bottom:1px solid rgba(20,18,16,.12)">
+          <span style="font-size:14px;font-weight:600">{{ l.k }}</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#141210">{{ l.v }}</span>
+          <span style="font-size:14px;line-height:1.6;color:#4A443D">{{ l.note }}</span>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+      <div style="border:1px solid rgba(20,18,16,.12);padding:24px;display:flex;flex-direction:column;gap:8px"><span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Imagery</span><span style="font-size:14px;line-height:1.65;color:#3A3530">Real event photos, warm tungsten light, bokeh, black wardrobe. No stock clip-art or illustrated icons.</span></div>
+      <div style="border:1px solid rgba(20,18,16,.12);padding:24px;display:flex;flex-direction:column;gap:8px"><span style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Voice</span><span style="font-size:14px;line-height:1.65;color:#3A3530">Elegant, warm, energetic. First person from Keira. Keep the tagline verbatim: "Your Moment. Your Story. My Stage."</span></div>
+      <div style="border:1px solid rgba(20,18,16,.12);padding:24px;display:flex;flex-direction:column;gap:8px"><span style="font-family:'Playfair Display',serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8A6D1F;font-weight:600">Logo</span><span style="font-size:14px;line-height:1.65;color:#3A3530">"HOST" in Playfair caps (0.32em tracking) before or above "Keira" in Great Vibes, gold on onyx only.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="css" data-screen-label="06 Stylesheet" style="background:#0B0A09;color:#F5EBD7;padding:clamp(64px,9vw,112px) 28px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#D4AF37">06 — Stylesheet</p>
+        <h2 style="margin:0;font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(34px,4vw,50px);line-height:1.12">host-keira.css</h2>
+        <p style="margin:0;max-width:560px;font-size:15px;line-height:1.7;color:#D9D0BE">CSS variables, responsive type scale, base elements and component classes. Link it on every page after the Google Fonts link.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button onClick="{{ copyCss }}" style="background:#D4AF37;color:#0B0A09;border:none;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:16px 26px;cursor:pointer;white-space:nowrap">{{ copyLabel }}</button>
+        <a href="host-keira.css" download="host-keira.css" style="border:1px solid #D4AF37;color:#D4AF37;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:15px 26px;white-space:nowrap">Download</a>
+      </div>
+    </div>
+    <pre style="margin:0;max-height:560px;overflow:auto;background:#141210;border:1px solid rgba(212,175,55,.25);padding:24px;font-family:'JetBrains Mono',monospace;font-size:12.5px;line-height:1.65;color:#E8DFCC;white-space:pre">{{ css }}</pre>
+  </div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { device: 'd', css: 'Loading host-keira.css…', copied: false };
+  componentDidMount() {
+    fetch('host-keira.css').then(r => r.text()).then(css => this.setState({ css })).catch(() => {});
+  }
+  renderVals() {
+    const dev = this.state.device;
+    const PF = "'Playfair Display', serif", MS = 'Montserrat, sans-serif', GV = "'Great Vibes', cursive";
+    const rows = [
+      ['H1', 76, 60, 44, PF, 400, 1.05, 'normal', 'none', 'normal', '#141210', 'Playfair 400 · lh 1.05', 'Your Moment. Your Story.'],
+      ['H2', 50, 42, 34, PF, 400, 1.12, 'normal', 'none', 'normal', '#141210', 'Playfair 400 · lh 1.12', 'Professional. Passionate.'],
+      ['H3', 32, 28, 24, PF, 500, 1.25, 'normal', 'none', 'normal', '#141210', 'Playfair 500 · lh 1.25', 'Event Hosting / Emcee'],
+      ['H4', 24, 22, 20, PF, 500, 1.3, 'normal', 'none', 'normal', '#141210', 'Playfair 500 · lh 1.3', 'Inspirational Speaking'],
+      ['H5', 19, 18, 17, PF, 500, 1.4, 'normal', 'none', 'normal', '#141210', 'Playfair 500 · lh 1.4', 'Marketing Management'],
+      ['H6 / Eyebrow', 12, 12, 11, MS, 500, 1.5, '.22em', 'uppercase', 'normal', '#8A6D1F', 'Montserrat 500 · 0.22em · caps', 'Dream Big Events Management'],
+      ['Body Large', 17, 16, 16, MS, 400, 1.8, 'normal', 'none', 'normal', '#3A3530', 'Montserrat 400 · lh 1.8', 'Every event gets the same energy, warmth and preparation, so your guests stay engaged.'],
+      ['Body', 16, 15, 15, MS, 400, 1.7, 'normal', 'none', 'normal', '#3A3530', 'Montserrat 400 · lh 1.7', 'A Certified Events Hosting & Events Mgmt. Services Provider, Certified Inspirational Speaker and Certified Trainer.'],
+      ['Body Small', 14, 13, 13, MS, 400, 1.7, 'normal', 'none', 'normal', '#4A443D', 'Montserrat 400 · lh 1.7', 'Planning and on-the-day coordination so your program stays on track.'],
+      ['Label', 11, 11, 10, MS, 500, 1.5, '.2em', 'uppercase', 'normal', '#6B6B6B', 'Montserrat 500 · 0.2em · caps', 'Location · Availability'],
+      ['Button', 13, 13, 12, MS, 600, 1, '.14em', 'uppercase', 'normal', '#141210', 'Montserrat 600 · 0.14em · caps', 'Book Host Keira →'],
+      ['Quote', 24, 22, 20, PF, 400, 1.5, 'normal', 'none', 'italic', '#141210', 'Playfair Italic 400 · lh 1.5', 'Giving you the finest & quality event experience.'],
+      ['Script XL', 78, 64, 46, GV, 400, 1.1, 'normal', 'none', 'normal', '#8A6D1F', 'Great Vibes · lh 1.1', 'My Stage.'],
+      ['Script', 38, 34, 30, GV, 400, 1.1, 'normal', 'none', 'normal', '#8A6D1F', 'Great Vibes · lh 1.1', 'Your Celebration, My Stage']
+    ];
+    const idx = { d: 1, t: 2, m: 3 }[dev];
+    return {
+      devices: [['d', 'Desktop'], ['t', 'Tablet'], ['m', 'Mobile']].map(([k, label]) => ({
+        label, bg: dev === k ? '#0B0A09' : 'transparent', fg: dev === k ? '#D4AF37' : '#0B0A09',
+        pick: () => this.setState({ device: k })
+      })),
+      scale: rows.map(r => ({
+        name: r[0], d: r[1] + 'px', t: r[2] + 'px', m: r[3] + 'px', size: r[idx],
+        family: r[4], weight: r[5], lh: r[6], ls: r[7], tt: r[8], fs: r[9], color: r[10], spec: r[11], sample: r[12]
+      })),
+      neutrals: [
+        { name: 'Ivory', hex: '#FBF6EC', use: 'Cards, alternate light sections' },
+        { name: 'Deep Gold', hex: '#8A6D1F', use: 'Gold text on light backgrounds' },
+        { name: 'Gold Light', hex: '#E6C458', use: 'Gold hover state' },
+        { name: 'Onyx Soft', hex: '#221F1B', use: 'Dark hover, code blocks' },
+        { name: 'Ink', hex: '#141210', use: 'Headings on light' },
+        { name: 'Text', hex: '#3A3530', use: 'Body copy on light' },
+        { name: 'Gray', hex: '#6B6B6B', use: 'Labels, meta' },
+        { name: 'On Dark', hex: '#D9D0BE', use: 'Body copy on onyx' }
+      ],
+      layout: [
+        { k: 'Breakpoints', v: '≥1024 · 768–1023 · ≤767', note: 'Desktop, Tablet, Mobile. Nav collapses to the menu button below 860px.' },
+        { k: 'Container', v: '1140px / 1240px', note: 'Content sections 1140px; header, hero and footer 1240px.' },
+        { k: 'Side gutter', v: '28px · 28px · 20px', note: 'Horizontal page padding.' },
+        { k: 'Section padding', v: '128px · 96px · 72px', note: 'Top and bottom of every section.' },
+        { k: 'Gaps', v: '16 · 24 · 56px', note: 'Image grids · cards · header-to-content.' },
+        { k: 'Corner radius', v: '0', note: 'Square corners; pill only for the floating Messenger button.' },
+        { k: 'Borders', v: '1px rgba(20,18,16,.12)', note: 'Gold at 35% on dark: rgba(212,175,55,.35).' }
+      ],
+      css: this.state.css,
+      copyLabel: this.state.copied ? 'Copied ✓' : 'Copy CSS',
+      copyCss: () => {
+        navigator.clipboard?.writeText(this.state.css);
+        this.setState({ copied: true });
+        setTimeout(() => this.setState({ copied: false }), 1800);
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
