@@ -1,0 +1,86 @@
+.grid {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  gap: clamp(40px, 6vw, 88px);
+  align-items: center;
+}
+
+.photo {
+  aspect-ratio: 4 / 5;
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+}
+
+.frame {
+  position: absolute;
+  inset: 18px -18px -18px 18px;
+  border: 1px solid var(--hk-gold);
+}
+
+.img {
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.divider {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: var(--hk-gold);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hk-gold);
+}
+
+.body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--hk-text);
+  text-wrap: pretty;
+}
+
+.facts {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  border-top: 1px solid rgba(20, 18, 16, 0.12);
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 16px;
+}
+
+.factLabel {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--hk-gray);
+}
+
+.factValue {
+  font-family: var(--hk-font-heading);
+  font-size: 19px;
+}

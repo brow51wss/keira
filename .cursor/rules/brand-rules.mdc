@@ -1,0 +1,38 @@
+---
+description: Mandatory Host Keira brand rules. The site uses the Claude version brand; any Astra content must be adapted to it.
+alwaysApply: true
+---
+
+# Brand Rules (NON-NEGOTIABLE)
+
+The site is a **Next.js** (App Router, TypeScript, plain CSS Modules) port of the **Claude** version. Its look must never change except by explicit user request.
+
+## Rule 1: The Claude brand always governs
+- Every page, section, and element in this project MUST follow the Claude brand rules. No exceptions.
+- Source of truth, in order: `public/host-keira.css` (canonical tokens), `public/brand-guide.html`, then existing components in `components/`.
+- `app/globals.css` mirrors the `public/host-keira.css` tokens. Keep both in sync.
+- Use the `--hk-*` variables. Do not hardcode new colors, fonts, or sizes.
+- Do not introduce a new visual style, palette, font, or component pattern.
+
+## Rule 2: Astra content must be adapted to the Claude brand
+- Sections and elements may be borrowed from the Astra version, but only their structure, content, and behavior.
+- Restyle everything borrowed with Claude tokens before it reaches the site.
+- Never bring in Astra's `brand.css`, `styles.css`, `brand-guide.css`, or `BRAND-GUIDE.md`.
+- If an Astra element cannot be expressed in the Claude brand, stop and ask the user.
+- The old `astra/` and `claude/` folders were deleted. Originals are in git commit `03f53f1` (`git show 03f53f1:astra/dist/index.html`).
+
+## Claude brand quick reference
+- Fonts: Playfair Display (headings), Montserrat (body, labels), Great Vibes (script accents). Loaded with `next/font` in `app/layout.tsx`. NOT Astra's Cormorant Garamond.
+- Colors: gold `#D4AF37`, black `#0B0A09`, beige `#F5EBD7`, ivory `#FBF6EC`, text `#141210`, dark gold text `#8A6D1F`.
+- Square corners (radius 0). Only exception: the floating Messenger pill.
+- Sections alternate dark and light backgrounds.
+- Section header: uppercase eyebrow, then a Playfair H2.
+
+## Code conventions
+- One component per file in `components/`, with a matching `.module.css`. Shared pieces live in `components/ui.module.css`.
+- Page copy and link constants live in `lib/content.ts`.
+- Server components by default. Add `"use client"` only for state or browser APIs.
+- Layout switching uses CSS media queries, not JavaScript window-width checks.
+
+## Conflicts
+- If an instruction conflicts with these rules, state the conflict and ask the user before proceeding.

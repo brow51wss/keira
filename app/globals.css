@@ -1,0 +1,75 @@
+/* ==========================================================================
+   HOST KEIRA — global styles
+   Tokens mirror public/host-keira.css (the Claude brand stylesheet).
+   Keep both in sync. Components use these variables, never new colors/fonts.
+   ========================================================================== */
+
+:root {
+  /* Primary — Onyx */
+  --hk-onyx: #0b0a09;
+  --hk-onyx-soft: #221f1b;
+  /* Secondary — Gold */
+  --hk-gold: #d4af37;
+  --hk-gold-light: #e6c458;
+  --hk-gold-deep: #8a6d1f;
+  /* Tertiary — Beige */
+  --hk-beige: #f5ebd7;
+  --hk-ivory: #fbf6ec;
+  /* Neutrals */
+  --hk-ink: #141210;
+  --hk-text: #3a3530;
+  --hk-text-muted: #4a443d;
+  --hk-gray: #6b6b6b;
+  --hk-on-dark: #d9d0be;
+  --hk-on-dark-muted: #b8af9e;
+
+  /* Fonts (loaded in app/layout.tsx via next/font) */
+  --hk-font-heading: var(--font-playfair), Georgia, serif;
+  --hk-font-body: var(--font-montserrat), "Helvetica Neue", Arial, sans-serif;
+  --hk-font-accent: var(--font-great-vibes), cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--hk-beige);
+  color: var(--hk-ink);
+  font-family: var(--hk-font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Lock page scroll while the mobile menu is open (set by SiteHeader). */
+body[data-menu-open="true"] {
+  overflow: hidden;
+}
+
+/* :where() keeps these at zero specificity so component classes always win. */
+:where(a) {
+  color: var(--hk-gold-deep);
+  text-decoration: none;
+}
+
+:where(a:hover) {
+  color: var(--hk-gold);
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+::placeholder {
+  color: #8a8378;
+}

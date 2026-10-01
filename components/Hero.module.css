@@ -1,0 +1,66 @@
+.hero {
+  background: var(--hk-onyx);
+  color: var(--hk-beige);
+  position: relative;
+  overflow: hidden;
+}
+
+.grid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr));
+  align-items: stretch;
+}
+
+.copy {
+  padding: clamp(56px, 9vw, 120px) 28px clamp(56px, 8vw, 110px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--hk-font-heading);
+  font-weight: 400;
+  font-size: clamp(44px, 6vw, 76px);
+  line-height: 1.04;
+}
+
+.script {
+  font-family: var(--hk-font-accent);
+  color: var(--hk-gold);
+  font-size: 1.25em;
+  line-height: 1;
+}
+
+.lead {
+  margin: 0;
+  max-width: 440px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--hk-on-dark);
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.photo {
+  position: relative;
+  min-height: 520px;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center top;
+}

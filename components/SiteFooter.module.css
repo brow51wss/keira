@@ -1,0 +1,53 @@
+.footer {
+  background: var(--hk-onyx);
+  color: var(--hk-on-dark-muted);
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 44px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.script {
+  font-family: var(--hk-font-accent);
+  font-size: 34px;
+  color: var(--hk-gold);
+  line-height: 1;
+}
+
+.tag {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.links a {
+  color: var(--hk-gold);
+}
+
+.copy {
+  font-size: 12px;
+}

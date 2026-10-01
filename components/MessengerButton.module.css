@@ -1,0 +1,26 @@
+.fab {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+  background: var(--hk-gold);
+  color: var(--hk-onyx);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  border-radius: 999px;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.fab:hover {
+  background: var(--hk-gold-light);
+  color: var(--hk-onyx);
+}
+
+/* Hidden while the mobile menu is open (flag set by SiteHeader). */
+:global(body[data-menu-open="true"]) .fab {
+  display: none;
+}

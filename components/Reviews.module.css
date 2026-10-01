@@ -1,0 +1,57 @@
+.section {
+  background: var(--hk-onyx);
+  color: var(--hk-beige);
+}
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  gap: 24px;
+}
+
+.card {
+  margin: 0;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mark {
+  font-family: var(--hk-font-heading);
+  font-size: 56px;
+  line-height: 0.6;
+  color: var(--hk-gold);
+  height: 28px;
+}
+
+.quote {
+  margin: 0;
+  font-family: var(--hk-font-heading);
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--hk-beige);
+  text-wrap: pretty;
+}
+
+.name {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--hk-gold);
+}
